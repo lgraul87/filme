@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>servlet.ServletController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ServletDireccionador</servlet-name>
+  	<display-name>ServletDireccionador</display-name>
+  	<description></description>
+  	<servlet-class>servlet.ServletDireccionador</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>ServletController</servlet-name>
   	<url-pattern>/ServletController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ServletDireccionador</servlet-name>
+  	<url-pattern>/ServletDireccionador</url-pattern>
   </servlet-mapping>
 </web-app>

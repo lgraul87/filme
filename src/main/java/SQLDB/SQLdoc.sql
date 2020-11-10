@@ -11,7 +11,39 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
+
+-- Volcando estructura de base de datos para cine
+DROP DATABASE IF EXISTS `cine`;
+CREATE DATABASE IF NOT EXISTS `cine` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `cine`;
+
+-- Volcando estructura para tabla cine.historial
+DROP TABLE IF EXISTS `historial`;
+CREATE TABLE IF NOT EXISTS `historial` (
+  `director` varchar(128) NOT NULL,
+  `fecha` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 -- La exportación de datos fue deseleccionada.
+
+-- Volcando estructura para tabla cine.pelicula
+DROP TABLE IF EXISTS `pelicula`;
+CREATE TABLE IF NOT EXISTS `pelicula` (
+  `director` varchar(128) NOT NULL,
+  `titulo` varchar(128) NOT NULL,
+  `fecha` datetime NOT NULL,
+  PRIMARY KEY (`titulo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- La exportación de datos fue deseleccionada.
+
+-- Volcando estructura para tabla cine.usuario
+DROP TABLE IF EXISTS `usuario`;
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `nick` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`nick`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- La exportación de datos fue deseleccionada.
 
