@@ -130,6 +130,8 @@ public class ServletController extends HttpServlet {
 			break;
 
 		// NO ME DA TIEMPO
+		// VA TODO MUY BIEN ME HA QUEDADO TERMINAR DE AJUSTAR EL HISTORIAL
+		// LOS ANIADIR BORRAR Y MODIFICAR
 
 		/*
 		 * case "aniadirPelicula":
